@@ -1,5 +1,11 @@
 # FluidColorPicker
 
+<p align="center">
+
+  <img src="Assets/demo.gif" width="320" alt="FluidColorPicker demo">
+
+</p>
+
 A premium SwiftUI color picker with a fluid glass selector, live color binding, and modern Liquid Glass styling.
 
 `FluidColorPicker` is a reusable horizontal spectrum picker built for polished Apple-style interfaces. It was originally designed for a starlight headliner controller app, where the selected color updates the ambient lighting preview in real time.
@@ -10,16 +16,42 @@ The component focuses on smooth interaction, clean SwiftUI architecture, and a p
 
 ## Preview
 
-```swift
-@State private var selectedColor: Color = .white
+<p align="center">
 
-FluidColorPicker(
-    Text("Ambient Color")
-        .font(.caption)
-        .foregroundStyle(.secondary),
-    selection: $selectedColor
-)
-.padding(.horizontal)
+  <img src="Assets/preview.png" width="320" alt="FluidColorPicker dark preview">
+
+</p>
+
+```swift
+@State var selectedColor: Color = .white
+    ZStack {
+        LinearGradient(
+            colors: [
+                .black,
+                Color(hex: "111111"),
+                Color(hex: "181618")
+            ],
+            startPoint: .top,
+            endPoint: .bottom
+        )
+        .ignoresSafeArea()
+        
+        VStack(spacing: 32) {
+            Circle()
+                .fill(selectedColor)
+                .frame(width: 90, height: 90)
+                .shadow(color: selectedColor.opacity(0.8), radius: 30)
+            
+            FluidColorPicker(
+                Text("Ambient Color")
+                    .font(.caption)
+                    .foregroundStyle(.white.opacity(0.7)),
+                selection: $selectedColor
+            )
+            .padding(.horizontal, 28)
+        }
+    }
+}
 ```
 
 ---
