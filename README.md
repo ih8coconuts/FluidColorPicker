@@ -168,33 +168,18 @@ This keeps the interaction smooth even if the user starts dragging before the ex
 
 ## Requirements
 
+- iOS 26+
 - SwiftUI
-- Apple platforms supporting `GlassEffectContainer`
-- Apple platforms supporting `.glassEffect`
 
-This component is designed for modern SwiftUI interfaces using Apple’s newer glass effect APIs.
-
----
-
-## Project Structure
-
-```text
-FluidColorPicker.swift
-README.md
-NOTICE.md
-```
+This component is designed for modern SwiftUI interfaces using Apple’s Liquid Glass design language.
 
 ---
 
 ## License
 
-Copyright © 2026 ih8coconuts. All rights reserved.
+MIT License
 
-This repository is shared publicly for portfolio and educational viewing purposes only.
-
-You may view the source code, but you may not copy, modify, distribute, sublicense, sell, or use this code in your own personal, commercial, or production projects without explicit written permission.
-
-This project is not open source.
+This project is open source and available under the terms of the MIT License.
 
 ---
 
