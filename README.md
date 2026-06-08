@@ -1,10 +1,10 @@
 # FluidColorPicker
 
-<p align="center">
 
-  <img src="Assets/demo.gif" width="320" alt="FluidColorPicker demo">
 
-</p>
+https://github.com/user-attachments/assets/1c9b8d27-3a0f-49a8-9c00-77c091e3cc0c
+
+
 
 A premium SwiftUI color picker with a fluid glass selector, live color binding, and modern Liquid Glass styling.
 
